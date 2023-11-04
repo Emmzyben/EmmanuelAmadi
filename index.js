@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     var targetDiv = document.getElementById("targetDiv");
     document.querySelector("a").addEventListener("click", function(event) {
@@ -16,3 +17,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var targetDiv = document.getElementById("portfolio");
+    document.querySelector("a").addEventListener("click", function(event) {
+        event.preventDefault();
+        targetDiv.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    var targetDiv = document.getElementById("targetDiv3");
+    document.querySelector("a").addEventListener("click", function(event) {
+        event.preventDefault();
+        targetDiv.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+
