@@ -14,7 +14,7 @@ color: white;
 text-align: center;
 width: 100%;
 padding-top: 13%;
-font-size: 35px;
+font-size: 20px;
 font-weight: lighter;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -30,7 +30,7 @@ ul li{
 }
 nav{
     background-color: rgb(255, 60, 0);
-    padding: 10px;
+    padding: 1px;
     position: sticky;
     top: 0;
 }
@@ -101,6 +101,11 @@ a{
 #inner{
     width: 60%;
 }
+#inner>div>h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
 #inner2{
     display: flex;
     flex-direction: row;
@@ -121,6 +126,10 @@ width: 100%;
     flex-direction: column;
   justify-content: center;
   
+}
+#portfolio>div>h1{
+    font-size: 28px;
+    font-weight: 700;
 }
 #porta{
     display: flex;
@@ -187,20 +196,42 @@ width: 100%;
     background-color:wheat;
     width: 50%;
 }
-#footerz{
-    background-color: wheat;
-    color:rgb(61, 52, 52);
+
+#flexy{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
 }
-#footerz >div{
-width: 45%;
+#flexy>div{
+    width:30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-input ,textarea{
-    width: 250px;
-    margin: 6px;
-    padding: 8px;
-    border-radius: 6px;
+#flexy>div>form>label>input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+#flexy>div>form>label>textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: orangered;
+    width: 100%;
+}
+footer>div{
+    text-align: center;
+    padding-top: 30px;
+    line-height: 0;
+}
+#spanner > a{
+    margin-right: 20px;
+    background-color: rgb(230, 143, 111);
+   padding: 20px;
 }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel-Amadi Portfolio</title>
     <link rel="stylesheet" href="index.css" >
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
    <header id="target">
@@ -88,7 +87,7 @@
    </article>
 
    <div id="portfolio">
-    <div style="text-align: center;padding: 30px;margin-top: 20px;"><h1>PORTFOLIO</h1></div>
+    <div style="text-align: center;padding: 30px;margin-top: 20px;"><h1>PROJECTS</h1></div>
 
     <div id="porta">
 <div id="hover1" style="background-image: url(files/randoiph.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
@@ -177,30 +176,73 @@ hoverElement.addEventListener("mouseout", function() {
 
    </div>
 
-   <div>
+   <div id="targetDiv3">
     <div class="relative mt-16 bg-deep-purple-accent-400">
-        <svg class="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400" preserveAspectRatio="none" viewBox="0 0 1440 54">
+        <svg class="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400" preserveAspectRatio="none" viewBox="0 0 1440 54" style="z-index: -1;">
           <path fill="orangered" d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"></path>
         </svg>
-        <div class="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
-            <div class="md:max-w-md lg:col-span-2">
-              <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-                  <rect x="3" y="1" width="7" height="12"></rect>
-                  <rect x="3" y="17" width="7" height="6"></rect>
-                  <rect x="14" y="1" width="7" height="6"></rect>
-                  <rect x="14" y="11" width="7" height="12"></rect>
-                </svg>
-                <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Company</span>
-              </a>
-            <div>
+   <div id="flexy">
+    <div></div>
+  <div> 
+    <form  style="margin-top: 20px; padding: 20px; border-radius: 8px;border: 1px solid grey;background-color: whitesmoke;">
+        <label class="block">
+            <h1 style="font-size: larger;font-weight: 700;text-align: center;">CONTACT</h1>
+            <p style="padding-left: 20px;">Have a question or want to work together?</p> </label>
+        <label class="block">
+            <input type="text" id="fullName" class="block rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px;" placeholder="Full name"/>
+        </label>
+        <label class="block">
+            <input type="number" id="telephone" class="block rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px" placeholder="Phone" />
+        </label>
+        <label class="block">
+            <input type="email" id="emailAddress" class="block  rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px" placeholder="Your Email"/>
+        </label>
+        <label class="block">
+            <textarea id="message" rows="3" class="block w-full rounded-md focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px" placeholder="Your message"></textarea>
+        </label>
+        <label >
+        <input type="submit" class="self-left px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri " style="background-color: orangered;color: white;padding: 10px; border: 0px solid black ;" >
+    </label>
+    </form></div> 
 
-            </div>
-            </div>
-        </div>
-      </div>
+<div>
+    
+</div>
+
    </div>
+  </div>
+</div>
 
+<footer>
+   <div>
+    <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto" id="spanner">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div> 
+    <div >
+        <h3>EMMANUEL AMADI ©2023</h3>
+    </div>
+</footer>
 </body>
 </html>
