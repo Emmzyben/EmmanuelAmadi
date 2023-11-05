@@ -212,10 +212,12 @@ width: 100%;
 #flexy>div>form>label>input{
     width: 100%;
     margin-bottom: 5px;
+    border-radius: 5px;
 }
 #flexy>div>form>label>textarea{
     width: 100%;
     margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 footer{
