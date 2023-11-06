@@ -3,9 +3,13 @@ body{
     padding: 0;
     color: rgb(60, 55, 55);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 html, body, .content {
     scroll-behavior: smooth;
+}
+header{
+    height: auto;
 }
 #background{
 position: absolute;
@@ -237,3 +241,53 @@ footer>div{
     background-color: rgb(230, 143, 111);
    padding: 20px;
 }
+video{
+    width: 100%;
+}
+@media only screen and (max-width: 900px) {
+    #hide{
+        width: 20% !important;
+       }
+       #insider{
+        width:60%!important;
+       }  
+       #inner1{
+        height: 600px;
+    
+    }  
+}
+@media only screen and (max-width: 700px) {
+   #hide{
+    display: none !important;
+   }
+   #insider{
+    width: 80% !important;
+   }
+   #porta{
+    flex-direction:column;
+}
+#porta>div{
+    width: auto;
+}
+#inner1{
+    width: 100%;
+    height: auto;
+
+}
+nav{
+    display: none;
+}
+video{
+    height: 500px;
+    width: auto; 
+}
+#background{
+    top: 15%;
+    font-size: 13px;
+    }
+    #a{
+    font-size: 15px;
+    }
+}
+
+
