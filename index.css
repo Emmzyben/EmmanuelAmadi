@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     color: rgb(60, 55, 55);
+    background-color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
@@ -33,10 +34,11 @@ ul li{
     display: inline;
 }
 nav{
-    background-color: rgb(255, 60, 0);
+    background-color: #0884cc;
     padding: 1px;
     position: sticky;
     top: 0;
+    z-index: 10000;
 }
 #links{
     margin-right: 40px;
@@ -48,7 +50,8 @@ nav{
 }
 #links:hover{
    background-color: white;
-   color: orangered;
+   color: #0884cc;
+   border-radius: 10px;
 }
 
 section{
@@ -91,6 +94,10 @@ article>div> img{
   width:100%;
   border-radius: 10px;
 }
+
+
+
+
 a{
     text-decoration: none;
 }
@@ -103,7 +110,7 @@ a{
     height: 500px;
 }
 #inner{
-    width: 60%;
+    width: 50%;
 }
 #inner>div>h1{
     font-size: 28px;
@@ -120,9 +127,11 @@ a{
     width: 150px;
     height: 150px;
     margin: 15px;
+    box-shadow: 2px 2px 10px rgb(216, 215, 215);
 }
 #inner2> div >img{
 width: 100%;
+height: 100%;
 }
 
 #portfolio{
@@ -131,7 +140,7 @@ width: 100%;
   justify-content: center;
   
 }
-#portfolio>div>h1{
+#portfolio>a>h1{
     font-size: 28px;
     font-weight: 700;
 }
@@ -142,51 +151,74 @@ width: 100%;
   flex-wrap: wrap;
   width: 100%;
 }
-#porta>div{
+#porta>a{
 width: 40%;
 height: 300px;
 margin: 20px;
-box-shadow: 1px 1px 10px orangered;
+box-shadow: 1px 1px 10px #0884cc;
 }
-#porta>div>img{
+#porta>a>img{
     width: 100%;
     height: 300px;
     }
  
     #visit  {
         display: none;
-        background-color: rgba(255, 68, 0, 0.708);
+        background-color: #0884cc9a;
         text-align: center;
-        padding: 103px;
+        position: absolute;
+        padding-top: 80px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
     #visit1 {
         display: none;
-        background-color: rgba(255, 68, 0, 0.708);
+        background-color: #0884cc9a;
         text-align: center;
         padding: 88px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
     
    #visit3{
     display: none;
-        background-color: rgba(255, 68, 0, 0.708);
+    background-color: #0884cc9a;
         text-align: center;
         padding: 93px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
    }
    #visit5{
     display: none;
-        background-color: rgba(255, 68, 0, 0.708);
+        background-color: #0884cc9a;
         text-align: center;
         padding: 103px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+   }
+   .p>p{
+color: white;
    }
     
     
-#porta>div>div>a{
+#porta>a>div>a{
     color: white;
 }
-#porta>div>div>a:hover{
+#porta>a>div>a:hover{
   text-decoration: underline;
 }
-#porta>div>div>h3{
+#porta>a>div>h3{
     font-size: 22px;
     color: white;
 }
@@ -215,20 +247,24 @@ width: 100%;
 }
 #flexy>div>form>label>input{
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 #flexy>div>form>label>textarea{
     width: 100%;
     margin-bottom: 5px;
     border-radius: 5px;
+    max-width: 100%;
+    max-height: 80px;
+    min-width:100%;
+    min-height: 80px;
 }
 
 footer{
     display: flex;
     flex-direction:column;
     justify-content: center;
-    background-color: orangered;
+    background-color: #0884cc;
     width: 100%;
 }
 footer>div{
@@ -238,8 +274,7 @@ footer>div{
 }
 #spanner > a{
     margin-right: 20px;
-    background-color: rgb(230, 143, 111);
-   padding: 20px;
+    color: #fff;
 }
 video{
     width: 100%;
@@ -252,7 +287,7 @@ video{
         width:60%!important;
        }  
        #inner1{
-        height: 600px;
+        height: 700px;
     
     }  
 }
@@ -266,7 +301,7 @@ video{
    #porta{
     flex-direction:column;
 }
-#porta>div{
+#porta>a{
     width: auto;
 }
 #inner1{
@@ -288,6 +323,138 @@ video{
     #a{
     font-size: 15px;
     }
+    #inner{
+        width: auto;
+    }
+
+    #inner2> div{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        box-shadow: 2px 2px 10px rgb(216, 215, 215);
+    }
+    #inner2> div >img{
+    width: 100%;
+    height: 100%;
+    }
+
+    section{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: medium;
+    }
+    section >div{
+        width: 35%;
+        margin-right: 0;
+        height: 400px;
+        margin-top: 0;
+        margin: 5px;
+    }
+    
+    section >div >img{
+        width: 100px;
+    }
 }
 
+#side{
+    background-color: #0884cc;
+    height: 70px;
+    display: none;
+}
 
+@media only screen and (max-width: 800px) {
+    #side{
+        display: block;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+       width: 100%;
+    }
+   #inner1{
+    width: auto;
+   }
+   #inner{
+    width: auto;
+   }
+   
+}
+.container {
+    display: none;
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+ 
+
+  @media screen and (max-width:1200px) {
+   .container{
+    display: inline-block;
+    cursor: pointer;
+   }
+    #ul1{
+        display: none;
+    }
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    line-height: 50px;
+    color: #3d3d3d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+border-bottom: 1px solid #e4e4e4;
+padding-left: 15px;
+  }
+  
+  .sidenav a:hover {
+    color: #0884cc;
+  }
+  #img{
+    margin-left: 40px;
+  }
+ 
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

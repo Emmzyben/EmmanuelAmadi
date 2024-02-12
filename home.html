@@ -12,8 +12,8 @@
    </header>
    <div id="background">
  <div style="line-height: 40px;">
-     <h1>Hello, i'm <span style="color: rgb(255, 60, 0);">Emmanuel Amadi</span></h1>
-    <h1>I am a full-stack web developer</h1>
+     <h1>Hello, i'm <span style="color: #0884cc;">Emmanuel Amadi</span></h1>
+    <h1>A full-stack web developer</h1>
 </div> 
 <br>
     <a id="a" href="#targetDiv">View my work </a>
@@ -29,14 +29,30 @@
     </ul>
    </nav>
 
+   <div id="side">
+   <div onclick="openNav()" >
+    <div class="container" onclick="myFunction(this)" id="sideNav">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
 
+    <div id="mySidenav" class="sidenav">
+      <a  href="#target">HOME</a>
+      <a href="#targetDiv">ABOUT</a>
+         <a  href="#targetDiv1">SKILLS</a>
+         <a  href="#portfolio">PORTFOLIO</a>
+         <a  href="#targetDiv3">CONTACT</a>
+    </div>
 
 
    <section id="targetDiv">
     <div>
       <img src="files/fast_prev_ui.png" alt="">  
        <h1>Fast</h1> 
-<p>Fast load times and lag free interaction, my highest priority.</p>
+       <p>Fast load times and lag free interaction, my highest priority.</p>
     </div>
     <div>
         <img src="files/responsive_prev_ui.png" alt="">
@@ -59,12 +75,12 @@
    <article id="targetDiv1">
     <div id="inner1">
         <img src="files/copy1.jpg" alt="" >
-    <div style="padding: 20px;"> 
+    <div style="padding: 20px;">
         <h1>Who's this guy?</h1>  
       <p>I'm a Full-stack Developer from Port Harcourt, Rivers state.</p>  
        <p>I'm a passionate web developer with a flair for creativity and a love for coding. </p>
        <br>
-       <a href="#targetDiv3" style="color: orangered;">Let's make something special.</a> 
+       <a href="#targetDiv3" style="color: #0884cc;">Let's make something special.</a> 
     </div> 
     </div>
 
@@ -80,8 +96,6 @@
 <div><img src="files/react.png" alt=""></div>
 <div> <img src="files/PHP-logo.svg.png" alt=""></div>
 <div><img src="files/sql.jpg" alt=""></div>
-<div><img src="files/solidity.webp" alt=""></div>
-<div><img src="files/WordPress-Logo-1.png" alt=""></div>
     </div>
 </div>
    </article>
@@ -90,10 +104,10 @@
     <div style="text-align: center;padding: 30px;margin-top: 20px;"><h1>PROJECTS</h1></div>
 
     <div id="porta">
-<div id="hover1" style="background-image: url(files/randoiph.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
-<div id="visit">
+<a id="hover1" href="https://adolphtresources.com.ng"   style="position:relative; background-image: url(files/randoiph.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
+<div id="visit"  class="p">
     <h3>AdolphT Resources Nig LTD</h3>
-    <a href="https://adolphtresources.com.ng" target="_blank" >visit → https://adolphtresources.com.ng</a>
+    <p>visit → https://adolphtresources.com.ng</p>
 </div>
 <script>
     const hoverElement = document.getElementById("hover1");
@@ -108,14 +122,14 @@ hoverElement.addEventListener("mouseout", function() {
 });
 
 </script>
-</div>
+</a>
 
 
 
-<div id="hover2" style="background-image: url(files/Screenshot\ 2023-10-21\ 101715.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
-    <div id="visit1">
+<a href="https://flifohumanity.org/" id="hover2" style="position:relative; background-image: url(files/Screenshot\ 2023-10-21\ 101715.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
+    <div id="visit1"  class="p">
         <h3>FLOURISHING LIFE INTERNATIONAL FOUNDATION</h3>
-        <a href="https://flifohumanity.org/" target="_blank">visit → https://flifohumanity.org/</a>
+        <p>visit → https://flifohumanity.org/</p>
     </div>
     <script>
         const hover1Element = document.getElementById("hover2");
@@ -130,12 +144,12 @@ hoverElement.addEventListener("mouseout", function() {
     });
     
     </script>
-    </div>
+    </a>
 
-    <div id="hover3" style="background-image: url(files/website.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
-        <div id="visit3">
+    <a href="https://wanderpassagetravels.com" id="hover3" style="position:relative; background-image: url(files/website.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
+        <div id="visit3" class="p">
             <h3>Wanderpassage Travels</h3>
-            <a href="https://wander-passage-travels-and-tours.vercel.app/" target="_blank">visit → https://wander-passage-travels-and-tours.vercel.app</a>
+            <p>visit → https://wanderpassagetravels.com</p>
         </div>
         <script>
             const hover3Element = document.getElementById("hover3");
@@ -150,16 +164,16 @@ hoverElement.addEventListener("mouseout", function() {
         });
         
         </script>
-        </div>
+        </a>
 
 
-        <div id="hover5" style="background-image: url(files/vison360.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
-            <div id="visit5">
+        <a href="https://www.vision360.com.ng/" id="hover5" style="position:relative; background-image: url(files/vison360.png);background-position: center;background-size: contain;background-repeat: no-repeat;">
+            <div id="visit5"  class="p">
                 <h3>Vision360 technology</h3>
-                <a href="https://www.vision360.com.ng/" target="_blank">visit → https://www.vision360.com.ng/</a>
+                <p>visit → https://www.vision360.com.ng/</p>
             </div>
             <script>
-                const hover5Element = document.getElementById("hover5");
+            const hover5Element = document.getElementById("hover5");
             const visit5Element = document.getElementById("visit5");
             
             hover5Element.addEventListener("mouseover", function() {
@@ -171,36 +185,35 @@ hoverElement.addEventListener("mouseout", function() {
             });
             
             </script>
-            </div>
+            </a>
 </div>
-
-   </div>
+</div>
 
    <div id="targetDiv3">
     <div class="relative mt-16 bg-deep-purple-accent-400">
         <svg class="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400" preserveAspectRatio="none" viewBox="0 0 1440 54" style="z-index: -1;">
-          <path fill="orangered" d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"></path>
+          <path fill="#0884cc" d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"></path>
         </svg>
    <div id="flexy">
     <div id="hide"></div>
   <div id="insider"> 
-    <form style="margin-top: 20px; padding: 20px; border-radius: 8px; border: 1px solid grey; background-color: whitesmoke;" action="mailto:emmco96@gmail.com" method="post">  <label class="block">
+    <form action="" style="margin-top: 20px; padding: 20px; border-radius: 8px; border: 1px solid #e3f0f7; background-color: #f5f7f8;" action="mailto:emmco96@gmail.com" method="post">  <label class="block">
             <h1 style="font-size: larger;font-weight: 700;text-align: center;">CONTACT</h1>
             <p style="padding-left: 20px;">Have a question or want to work together?</p> </label>
         <label class="block">
-            <input type="text" id="fullName" class="block rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px;" placeholder="Full name"/>
+            <input type="text" id="fullName"   style="border: 0.5px solid #e3f0f7;padding: 10px;" placeholder="Full name"/>
         </label>
         <label class="block">
-            <input type="number" id="telephone" class="block rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px" placeholder="Phone" />
+            <input type="number" id="telephone"   style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Phone" />
         </label>
         <label class="block">
-            <input type="email" id="emailAddress" class="block  rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px" placeholder="Your Email"/>
+            <input type="email" id="emailAddress"  style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Your Email"/>
         </label>
         <label class="block">
-            <textarea id="message" rows="3" class="block w-full rounded-md focus:ring focus:ri focus:ri" style="border: 0.5px solid grey;padding: 8px" placeholder="Your message"></textarea>
+            <textarea id="message" rows="3"  style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Your message"></textarea>
         </label>
         <label >
-        <input type="submit" class="self-left px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri " style="background-color: orangered;color: white;padding: 10px; border: 0px solid black ;" >
+        <input type="submit"  style="background-color: #0884cc;color: white;padding: 10px; border: 0px solid black ;margin-top: 10px;" >
     </label>
     </form></div> 
 
@@ -214,24 +227,24 @@ hoverElement.addEventListener("mouseout", function() {
 
 <footer>
    <div>
-    <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto" id="spanner">
-        <a class="text-gray-500">
+    <span  id="spanner">
+        <a >
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a >
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a >
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a >
           <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24" style="width: 30px;">
             <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
@@ -243,5 +256,6 @@ hoverElement.addEventListener("mouseout", function() {
         <h3>EMMANUEL AMADI <span style="color: whitesmoke;">©2023</span> </h3>
     </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
