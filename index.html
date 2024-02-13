@@ -12,7 +12,7 @@
   <div id="slidingDiv" class="hidden">
     <h1>Hello, i'm <span style="color: #0884cc;">Emmanuel Amadi</span></h1>
   <h2>A full-stack web developer</h2><br>
-  <a id="link" href="#target">View my work</a>
+  <a id="link" href="#">Lets Connect</a>
 </div>
   
  </div>
@@ -217,19 +217,35 @@ hoverElement.addEventListener("mouseout", function() {
             <input type="text" id="fullName"   style="border: 0.5px solid #e3f0f7;padding: 10px;" placeholder="Full name"/>
         </label>
         <label class="block">
-            <input type="number" id="telephone"   style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Phone" />
+            <input type="number" id="phone"   style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Phone" />
         </label>
         <label class="block">
-            <input type="email" id="emailAddress"  style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Your Email"/>
+            <input type="email" id="email"  style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Your Email"/>
         </label>
         <label class="block">
             <textarea id="message" rows="3"  style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Your message"></textarea>
         </label>
         <label >
-        <input type="submit"  style="background-color: #0884cc;color: white;padding: 10px; border: 0px solid black ;margin-top: 10px;" >
+        <input type="button" value="Submit" onclick="submitForm()"  style="background-color: #0884cc;color: white;padding: 10px; border: 0px solid black ;margin-top: 10px;" >
     </label>
     </form></div> 
-
+    <script>
+      function submitForm() {
+          var fullName = document.getElementById("fullName").value;
+          var phone = document.getElementById("phone").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+      
+          var mailtoLink = "mailto:emmco96@gmail.com" +
+              "?subject=New application Form Submission" +
+              "&body=Full Name: " + firstName + " " + lastName + "%0D%0A" +
+              "Phone: " + phone + "%0D%0A" +
+              "Email: " + email + "%0D%0A" +
+              "Message: " + message;
+      
+          window.location.href = mailtoLink;
+      }
+      </script>
 <div id="hide">
     
 </div>
