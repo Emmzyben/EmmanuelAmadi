@@ -9,6 +9,14 @@ body{
 html, body, .content {
     scroll-behavior: smooth;
 }
+#slidingDiv {
+    position: relative;
+        left: -100%;
+      transition: left 1s ease-in-out;
+    }
+    .hidden {
+        display: none;
+      }
 #link{
     color: white;
     text-decoration: none;
@@ -402,6 +410,7 @@ video{
     background-color: #0884cc;
     height: 70px;
     display: none;
+   
 }
 
 @media only screen and (max-width: 800px) {

@@ -9,12 +9,27 @@
 <body>
   <header>
  <div id="inside">
-  <h1>Hello, i'm <span style="color: #0884cc;">Emmanuel Amadi</span></h1>
+  <div id="slidingDiv" class="hidden">
+    <h1>Hello, i'm <span style="color: #0884cc;">Emmanuel Amadi</span></h1>
   <h2>A full-stack web developer</h2><br>
   <a id="link" href="#target">View my work</a>
+</div>
+  
  </div>
   </header>
-   
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var slidingDiv = document.getElementById("slidingDiv");
+  
+    // Add a class to display the div and initiate the slide-out animation
+    slidingDiv.classList.remove("hidden");
+  
+    // After a short delay, reset the left property to its final position
+    setTimeout(function() {
+        slidingDiv.style.left = "0";
+    }, 10);
+  });
+  </script>
 
    <nav>
     <ul>

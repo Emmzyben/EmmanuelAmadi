@@ -45,9 +45,9 @@ function myFunction(x) {
 
   var open = false;
 
-function openNav() {
+  function openNav() {
     var sideNav = document.getElementById("mySidenav");
-    
+
     if (sideNav.style.width === "0px" || sideNav.style.width === "") {
         sideNav.style.width = "250px";
         open = true;
@@ -56,3 +56,15 @@ function openNav() {
         open = false;
     }
 }
+
+
+document.querySelectorAll("#mySidenav a").forEach(function(link) {
+    link.addEventListener("click", function(event) {
+   
+        event.stopPropagation();
+
+        var sideNav = document.getElementById("mySidenav");
+        sideNav.style.width = "0";
+        open = false;
+    });
+});
