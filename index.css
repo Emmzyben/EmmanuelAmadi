@@ -9,9 +9,44 @@ body{
 html, body, .content {
     scroll-behavior: smooth;
 }
-header{
-    height: auto;
+#link{
+    color: white;
+    text-decoration: none;
+    box-shadow: 2px 1px 5px rgb(51, 49, 49);
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.5s;
+      border-radius: 10px;
+      background-color: #0884cc;
 }
+#link:hover{
+    background-color: #0884cc;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+header{
+    height: 400px;
+    background-image: url(files/copy1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#inside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.945);
+    text-align: center;
+    color: white;
+    padding-top: 90px; 
+}
+
+
 #background{
 position: absolute;
 top: 0;
@@ -46,7 +81,8 @@ nav{
    cursor: pointer;
    padding: 6px;
    font-weight: bolder;
-   transition: background-color 0.7s;
+   transition:  0.5s;
+   border-radius: 10px;
 }
 #links:hover{
    background-color: white;
@@ -314,11 +350,13 @@ nav{
 }
 video{
     height: 500px;
-    width: auto; 
+    width: 100%; 
+    margin-top: 0;
 }
 #background{
     top: 15%;
     font-size: 13px;
+    height: auto;
     }
     #a{
     font-size: 15px;
