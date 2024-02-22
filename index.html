@@ -292,8 +292,10 @@ hoverElement.addEventListener("mouseout", function() {
    <div id="flexy">
     <div id="hide"></div>
   <div id="insider"> 
-    <form style="margin-top: 20px; padding: 20px; border-radius: 8px; border: 1px solid #e3f0f7; box-shadow: 2px 2px 10px #e3f0f7;" action="mailto:emmco96@gmail.com" method="post">  <label class="block">
-            <h1 style="font-size: larger;font-weight: 700;text-align: center;color: #0884cc;">CONTACT</h1>
+        <form style="margin-top: 20px; padding: 20px; border-radius: 8px; border: 1px solid #e3f0f7; box-shadow: 2px 2px 10px #e3f0f7;" action="mailto:emmco96@gmail.com" method="post" onsubmit="submitForm()">
+    
+      
+    <h1 style="font-size: larger;font-weight: 700;text-align: center;color: #0884cc;">CONTACT</h1>
             <p style="padding-left: 20px;text-align: center;">Have a question or want to work together?</p> </label>
         <label class="block">
             <input type="text" id="fullName"   style="border: 0.5px solid #e3f0f7;padding: 10px;" placeholder="Full name"/>
@@ -308,8 +310,9 @@ hoverElement.addEventListener("mouseout", function() {
             <textarea id="message" rows="3"  style="border: 0.5px solid #e3f0f7;padding: 10px" placeholder="Your message"></textarea>
         </label>
         <label >
-        <input type="button" value="Submit" onclick="submitForm()"  style="background-color: #0884cc;color: white;padding: 10px; border: 0px solid black ;margin-top: 10px;" >
-    </label>
+         <input type="button" value="Submit" onclick="submitForm()"  style="background-color: #0884cc;color: white;padding: 10px; border: 0px solid black ;margin-top: 10px;" >
+       
+        </label>
     </form></div> 
     <script>
       function submitForm() {
