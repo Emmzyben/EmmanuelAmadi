@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotating Icon Follows Cursor</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      background: url('https://cdn-icons-png.flaticon.com/512/64/64572.png') no-repeat center / contain;
+      transform-origin: center;
+      position: relative;
+      transition: transform 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon" id="icon"></div>
+
+  <script>
+    const icon = document.getElementById('icon');
+
+    document.addEventListener('mousemove', (event) => {
+      // Get cursor position
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+
+      // Get the icon's position (center of the screen)
+      const iconRect = icon.getBoundingClientRect();
+      const iconCenterX = iconRect.left + iconRect.width / 2;
+      const iconCenterY = iconRect.top + iconRect.height / 2;
+
+      // Calculate the angle between the cursor and the icon
+      const angle = Math.atan2(mouseY - iconCenterY, mouseX - iconCenterX) * (180 / Math.PI);
+
+      // Rotate the icon to point toward the cursor
+      icon.style.transform = `rotate(${angle}deg)`;
+    });
+  </script>
+</body>
+</html>
